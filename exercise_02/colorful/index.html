@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cherry Blossoms</title>
+    <style>
+body {
+        background-color: #FFB3E1;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        letter-spacing: 2px;
+
+        animation: colorchange 20s;
+        /* animation-name followed by duration in seconds*/
+        /* you could also use milliseconds (ms) or something like 2.5s */
+        -webkit-animation: colorchange 20s;
+        /* Chrome and Safari */
+    }
+
+    @keyframes colorchange {
+        0% {
+            background: #FFB3B3;
+        }
+        25% {
+            background: #B3FFFF;
+        }
+        50% {
+            background: #E6B3FF;
+        }
+        75% {
+            background: #B3FFB3;
+        }
+        100% {
+            background: #FFB3E1;
+        }
+    }
+
+    @-webkit-keyframes colorchange
+    /* Safari and Chrome - necessary duplicate */
+
+    {
+        0% {
+            background: red;
+        }
+        25% {
+            background: yellow;
+        }
+        50% {
+            background: blue;
+        }
+        75% {
+            background: green;
+        }
+        100% {
+            background: red;
+        }
+    }
+}
+#container {
+    margin: 1vw;    
+    text-align: center;
+}
+#description {
+    max-width: 600px;
+}
+a {
+    color: white;
+}
+li {
+    padding-left: 12px;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+<!--
+Design a simple project page for a past or current project with 1+ images and simple descriptions.
+Exercise Requirements:
+
+use <h1> tag for titling the project
+use <p> tag for a 1 paragraph description the project
+use <i> or <b> to highlight text once in the p tag
+use <a> tag for a reference link that inspired the project the project
+use <img> tag to display 2 or more images
+use <ul> or <ol> + <li> list tags for details (time, loaction, medium)
+use <div id> and name it "container" to wrap all the elements
+-->
+
+<body>
+    <div id="container">
+        <h1>Cherry Blossom Poster</h1>
+        <div id="description">
+            <p>Poster completed in relation to the annual spring cherry blossom celebration at the <a href="https://www.bbg.org/collections/cherries">Brooklyn Botanic Garden</a>.</p>
+        </div>
+        <img src="images/image1.jpg" alt="image" width="300">
+        <img src="images/image2.jpg" alt="image" width="300">
+        <ul>
+            <li>Spring 2017</li>
+            <li>Silkscreen</li>
+        </ul>
+    </div>
+</body>
+
+</html>

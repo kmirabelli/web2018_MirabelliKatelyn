@@ -57,11 +57,19 @@ p {
     margin: 0% 0% 4% 5%; 
     width: 40%;
 }
+#gradient {
+    position: absolute;
+    display: inline-block;
+    left: 50vw;
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(241, 241, 241, 1), rgba(255, 255, 255, 0) 100%)
+}
+
 @media only screen and (max-width:800px){
     .half {
         width: 100vw;
         height: 50vh; 
-/*        background-color: Yellow;*/
     }
     h1 {
         width: 100%;
@@ -80,4 +88,10 @@ p {
         margin: 5% 5%; 
         font-size: 12px;
     }
+    #gradient {
+        left: 0vw;
+        width: 100vw;
+        height: 50px;
+        background: linear-gradient(to bottom, rgba(241, 241, 241, 1), rgba(255, 255, 255, 0) 100%)
+}
 }

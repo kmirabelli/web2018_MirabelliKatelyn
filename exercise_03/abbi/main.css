@@ -1,0 +1,103 @@
+body {
+    background-color: #f1c2ba; 
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin: 10%;
+}
+#images {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+}
+#portrait img {
+    border: solid 5px white;
+    float: left;
+    width: 45%;
+}
+#jacket img {
+    border: solid 5px white;
+    width: 45%;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 6em;
+    line-height: 1em;
+    margin: 0;
+    padding-bottom: 50px;
+    width: 80vw;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: 80vw;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: justify;
+}
+p {
+    font-family: 'PT Mono', monospace;
+    font-size: 1.3em;
+    line-height: 2em;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin: 0%; 
+    text-align: left;
+    width: 100%;
+}
+
+@media only screen and (max-width:800px){
+    #body {
+        margin: 0;
+        text-align: center;
+    }
+    #container {
+        margin: 3%;
+    }
+    #portrait img {
+        margin-bottom: 25px;
+        width: 90vw;
+    }
+    #jacket img {
+        margin-bottom: 25px;
+        width: 90vw;
+    }
+    h1 {
+        font-size: 4em;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+    h2 {
+        line-height: 22px;
+        font-size: 22px;
+        width: 100vw;
+    }
+    h3 {
+        line-height: 22px;
+        font-size: 16px;
+        width: 90vw;
+    }
+    p {
+        bottom: 50vh;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        width: 100vw;
+    }
+}
+}

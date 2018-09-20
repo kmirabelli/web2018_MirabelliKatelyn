@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Assignment</title>
+    <style>
+        body {
+            color:grey;
+            font-family: 'Work Sans', sans-serif;
+            letter-spacing: 2px;
+        }
+        #container {
+            margin: 40px;
+            text-align: center;
+        }
+        ul {
+            display: inline-block;
+            margin: 0;
+            margin-top: 40px;
+            padding: 0;
+        }  
+        li {
+            background: grey;
+            display: inline-block;
+            list-style-type: none; 
+            padding: 30px;
+            text-align: center;
+        }
+        a {
+            color:white;
+            text-decoration: none;
+        }
+        
+        .hvr-trim {
+          display: inline-block;
+          vertical-align: middle;
+          -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          position: relative;
+        }
+        .hvr-trim:before {
+          content: '';
+          position: absolute;
+          border: white solid 4px;
+          top: 4px;
+          left: 4px;
+          right: 4px;
+          bottom: 4px;
+          opacity: 0;
+          -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+          -webkit-transition-property: opacity;
+          transition-property: opacity;
+        }
+        .hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
+  opacity: 1;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+
+<!--
+Similar to the demo done in class, create a responsive editorial page using html and css that can work on a phone and desktop. Choose an artist, designer, musician or anyone you admire and create a mock article for them. (Grab content from existing articles or make it up completely).
+
+Exercise Requirements:
+
+1. Before coding, create a proposal wireframe of either digital or analogue means that shows how content will react from desktop to mobile and put it in your exercise directory folder
+2. Grab content for your editorial header: 1 image, 1 header and 1 sub text is required. You can pull this from an existing article or make your own
+3. Use responsive styling by setting at least 1 media query
+4. Utilize values that scale with your browser (%, vw, vh, etc)
+5. Utilize relative universal positioning (top, right, bottom, left and centering values) 
+-->
+    
+<body>  
+    
+<div id="container">
+    <h1>Exercise 3</h1>
+    <ul>
+        <a href="wireframes/index.html" class="hvr-trim"><li>Wireframes</li></a>
+        <a href="abbi/index.html" class="hvr-trim"><li>Website</li></a>
+    </ul>
+</div>
+    
+</body>
+    
+</html>

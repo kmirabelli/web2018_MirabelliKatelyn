@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#container {
+    display: inline-block;
+}
+
+.grid {
+    width: 25vw;
+    height: 25vh; 
+    display: inline-block;
+    margin: 1vw;
+}
+
+#square1 {
+    background-color: black;
+    opacity: .4;
+    height: 100%;
+    width: 100%;
+    animation: spin 4s ease infinite;
+    transition: .1s transform;
+}
+
+@keyframes spin { 
+    100% {transform: rotate(360deg)}
+}
+
+#square2 {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    animation: rev 4s ease infinite;
+    transition: .1s transform;
+}
+
+@keyframes rev { 
+    100% {transform: rotate(-360deg)}
+}
+
+#square3 {
+    background-color: black;
+    opacity: .4;
+    height: 100%;
+    width: 100%;
+    animation: spin 4s ease infinite;
+    transition: .1s transform;
+}
+
+@keyframes spin { 
+    100% {transform: rotate(360deg)}
+}
+
+#square4 {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    animation: rev 4s ease infinite;
+    transition: .1s transform;
+}
+
+@keyframes rev { 
+    100% {transform: rotate(-360deg)}
+}

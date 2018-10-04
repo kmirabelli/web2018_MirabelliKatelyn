@@ -1,0 +1,58 @@
+body {
+	margin: 0px;
+	height: 100%;
+	overflow: hidden;
+	background: black;
+	color: white;
+}
+
+@font-face {
+    font-family: TextMeOne-Regular; 
+    src: url("TextMeOne-Regular.ttf"), format("ttf");
+}
+
+#container {
+	margin: 0;
+}
+
+#screensaver {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-image: none;
+/*	opacity: 0;
+*/	transition: .5s ease;
+	z-index: 100;
+}
+
+#about {
+	position: absolute;
+	animation: glow 3s infinite;
+}
+
+p {
+	font-family: TextMeOne-Regular;
+	margin:20px;
+	color:#47FFE3;
+	font-size: 60px;
+	width: 75vw;
+	z-index: 0;
+}
+
+@keyframes glow {
+	0% {text-shadow: 3px 3px 10px white;}
+	50% {text-shadow: 5px 5px 10px white;}
+	100% {text-shadow: 3px 3px 10px white;}
+}
+
+#ticker {
+	position: absolute;
+	bottom: 20px;
+	margin: 20px;
+	z-index: 100;
+	font-size: 20px;
+	color: white;
+	mix-blend-mode: difference; 
+}

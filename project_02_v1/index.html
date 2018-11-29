@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Katelyn Mirabelli</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        color: white;
+        opacity: .8;
+/*    	mix-blend-mode: difference;
+*/      text-align: left;
+        display: inline-block;
+        margin-bottom: 2rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 1.3rem;
+        z-index: 100;
+    }
+
+    a {
+    	color: white;
+    	opacity: .8;
+    	text-align: left;
+        z-index: 100;
+    }
+
+    .cta a{
+    	color: #391285;
+    	opacity: .8;
+ 		size: 1.7rem;
+    }
+
+    a:hover {
+    	color: #391285;
+    	opacity: .8;
+ 		size: 1.7rem;
+    }
+
+    .content {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .logo {
+        display: block;
+        margin-bottom: 4vh;
+        margin-top: 10vh;
+    }
+
+	button {	    
+		background-color: white;
+	    opacity: .8;
+	    border: none;
+    	color: #391285;
+	    padding: 24px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    line-height: .5;
+	    margin-bottom: 60px;
+	}
+
+    .background {
+        background: url(img/giphy1.gif) center;
+        background-size: contain;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+@media only screen and (max-width: 600px) {
+    .background {
+        background: url("") center;
+        background-color: blue;
+    }
+    .content {
+    	height: 80vh;
+    }
+    .logo {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 4vh;
+        margin-top: 1vh;
+    }
+    h1 {
+    	font-size: .8rem;
+        margin-left: .1rem;
+        margin-right: .1rem;
+    }
+}
+
+/*    .logo {
+        transform-origin: center center;
+        animation: doRotate 5s infinite linear;
+    }
+
+    @keyframes doRotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    body {
+        text-align: center;
+    }
+    }*/
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <img class="logo" src="img/logo.svg" alt="logo">
+            <h1>Hi! I'm currently a graphic design student at <a href="https://www.newschool.edu/parsons/" target="_blank">Parsons School of Design</a> and work in <a href="https://www.hachettebookgroup.com/" target="_blank">book publishing</a> in New York City. I have experience in print and digital design and use a variety of tools including: Illustrator, Photoshop, InDesign, After Effects, Sketch, and InVision as well as HTML, CSS, JavaScript, and jQuery. I’m always looking for new and interesting challenges.</h1>
+        <button class="cta"><a class="cta" href="mailto:katelyn.mirabelli@gmail.com">get in touch</a></button>
+        </div>
+        <div class="background"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script>
+    // START HERE: Explanation of Syntax:
+    // TweenMax.to(target, duration, {vars});
+
+    // Examples Below:
+    // TweenMax.to('.logo', 1, {opacity:0});
+    // TweenMax.from('.logo', 1, {opacity:0});
+    // TweenMax.from('.logo', 1, {scale:.5});
+
+
+    // Animating Multiple Elements:
+    // TweenMax.from('.logo', 1, {scale:0});
+    // TweenMax.from('.background', 1, {opacity:0, scale:0, delay:1});
+    // TweenMax.from('h1', 1, {opacity:0, scale:2, delay:2});
+
+
+    // Using delays to manage longer animations is hard
+    // Instead, use a GSAP timeline to create a sequential chain of animations
+    var timeline = new TimelineMax();
+    timeline.from('.logo', .5, {scale:0})
+    timeline.from('h1', .5, {opacity:0, scale:2})
+    // timeline.from('.background', .5, {scale:0})
+
+    // Easing
+    // Refer to https://greensock.com/ease-visualizer
+    var timeline = new TimelineMax();
+    // timeline.from('.logo', 1, {scale:0, ease:Bounce.easeOut})
+    // timeline.from('.background', .3, {scale:0})
+    timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
+    timeline.from('button', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
+    </script>
+</body>
+
+</html>

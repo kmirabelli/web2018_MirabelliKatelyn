@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="script.js"></script>
     <title>Katelyn Mirabelli</title>
     <style>
     body {
@@ -85,13 +88,17 @@
         z-index: -1;
     }
 
+/*    canvas {
+        z-index: 99;
+    }
+
 /*mobile styles*/
 
 @media only screen and (max-width: 600px) {
-    .background {
+/*    .background {
         background: url("#") center;
         background-color: #4202da;
-    }
+    }*/
     .content {
     	height: 100vh;
     }
@@ -128,6 +135,8 @@
         </div>
         <div class="background"></div>
     </div>
+
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script>
     // START HERE: Explanation of Syntax:
@@ -148,8 +157,8 @@
     // Using delays to manage longer animations is hard
     // Instead, use a GSAP timeline to create a sequential chain of animations
     var timeline = new TimelineMax();
-    timeline.from('.logo', .5, {scale:0})
-    timeline.from('h1', .5, {opacity:0, scale:2})
+    timeline.from('.logo', 1, {scale:1.1})
+    // timeline.from('h1', .5, {opacity:0, scale:2})
     // timeline.from('.background', .5, {scale:0})
 
     // Easing
@@ -157,8 +166,8 @@
     var timeline = new TimelineMax();
     // timeline.from('.logo', 1, {scale:0, ease:Bounce.easeOut})
     // timeline.from('.background', .3, {scale:0})
-    timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
-    timeline.from('.cta', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
+    // timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
+    // timeline.from('.cta', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
     </script>
 </body>
 

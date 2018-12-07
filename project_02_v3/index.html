@@ -1,9 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="script.js"></script>
     <title>Katelyn Mirabelli</title>
     <style>
     body {
@@ -12,7 +16,6 @@
         margin: 0;
         padding: 0;
     }
-
     h1 {
         color: white;
         opacity: .8;
@@ -24,27 +27,23 @@
         font-size: 1.3rem;
         z-index: 100;
     }
-
 /*    a {
-    	color: white;
-    	opacity: .8;
-    	text-align: left;
+        color: white;
+        opacity: .8;
+        text-align: left;
         z-index: 100;
     }
-
     .cta a{
-    	color: #391285;
-    	opacity: .8;
- 		size: 1.7rem;
+        color: #391285;
+        opacity: .8;
+        size: 1.7rem;
         text-decoration: none;
     }
-
     a:hover {
-    	color: #391285;
-    	opacity: .8;
- 		size: 1.7rem;
+        color: #391285;
+        opacity: .8;
+        size: 1.7rem;
     }*/
-
     .content {
         height: 100vh;
         display: flex;
@@ -52,7 +51,6 @@
         justify-content: center;
         flex-flow: column;
     }
-
     .logo {
         display: block;
         margin-bottom: 0;
@@ -61,19 +59,18 @@
         height: 100vh;
     }
 /*
-	.button {	    
-		background-color: white;
-	    border: none;
-    	color: #391285;
-	    padding: 20px;
-	    text-align: center;
-	    text-decoration: none;
-	    display: inline-block;
-	    font-size: 16px;
-	    line-height: .7;
-	    margin-bottom: 60px;
-	}*/
-
+    .button {       
+        background-color: white;
+        border: none;
+        color: #391285;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        line-height: .7;
+        margin-bottom: 60px;
+    }*/
     .background {
         background: url(img/giphy1.gif) center;
         background-size: contain;
@@ -84,35 +81,33 @@
         left: 0;
         z-index: -1;
     }
-
+/*    canvas {
+        z-index: 99;
+    }
 /*mobile styles*/
-
 @media only screen and (max-width: 600px) {
-    .background {
+/*    .background {
         background: url("#") center;
         background-color: #4202da;
-    }
+    }*/
     .content {
-    	height: 100vh;
+        height: 100vh;
     }
     h1 {
-    	font-size: 1rem;
+        font-size: 1rem;
         margin-left: .1rem;
         margin-right: .1rem;
     }
 }
-
 /*    .logo {
         transform-origin: center center;
         animation: doRotate 5s infinite linear;
     }
-
     @keyframes doRotate {
         to {
             transform: rotate(360deg);
         }
     }
-
     body {
         text-align: center;
     }
@@ -128,37 +123,33 @@
         </div>
         <div class="background"></div>
     </div>
+
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script>
     // START HERE: Explanation of Syntax:
     // TweenMax.to(target, duration, {vars});
-
     // Examples Below:
     // TweenMax.to('.logo', 1, {opacity:0});
     // TweenMax.from('.logo', 1, {opacity:0});
     // TweenMax.from('.logo', 1, {scale:.5});
-
-
     // Animating Multiple Elements:
     // TweenMax.from('.logo', 1, {scale:0});
     // TweenMax.from('.background', 1, {opacity:0, scale:0, delay:1});
     // TweenMax.from('h1', 1, {opacity:0, scale:2, delay:2});
-
-
     // Using delays to manage longer animations is hard
     // Instead, use a GSAP timeline to create a sequential chain of animations
     var timeline = new TimelineMax();
-    timeline.from('.logo', .5, {scale:0})
-    timeline.from('h1', .5, {opacity:0, scale:2})
+    timeline.from('.logo', 1, {scale:1.1})
+    // timeline.from('h1', .5, {opacity:0, scale:2})
     // timeline.from('.background', .5, {scale:0})
-
     // Easing
     // Refer to https://greensock.com/ease-visualizer
     var timeline = new TimelineMax();
     // timeline.from('.logo', 1, {scale:0, ease:Bounce.easeOut})
     // timeline.from('.background', .3, {scale:0})
-    timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
-    timeline.from('.cta', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
+    // timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
+    // timeline.from('.cta', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
     </script>
 </body>
 

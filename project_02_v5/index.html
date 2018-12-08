@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="images/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Katelyn Mirabelli</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        bottom: 0;
+        right: 0;
+        color: black;
+        text-align: right;
+        display: inline;
+        font-size: 12px;
+        padding-right: 12px;
+        position:absolute;
+        top: 10;
+        z-index: 1;
+    }
+
+    a {
+    	color: black
+    }
+
+/*    a {
+    	color: white;
+    	opacity: .8;
+    	text-align: left;
+        z-index: 100;
+    }
+
+    .cta a{
+    	color: #391285;
+    	opacity: .8;
+ 		size: 1.7rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+    	color: #391285;
+    	opacity: .8;
+ 		size: 1.7rem;
+    }*/
+
+    .content {
+    	width: 100vw;
+        height: 100vh;
+/*        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;*/
+    }
+
+    .logo {
+        display: block;
+        margin-bottom: 0;
+        margin-top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    svg { 
+        fill: red;
+    }
+/*
+	.button {	    
+		background-color: white;
+	    border: none;
+    	color: #391285;
+	    padding: 20px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    line-height: .7;
+	    margin-bottom: 60px;
+	}*/
+
+    .background {
+        background: black;
+        background: url(img/giphy1.gif) center;
+        background-size: contain;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+/*    canvas {
+        z-index: 99;
+    }
+
+/*mobile styles*/
+
+@media only screen and (max-width: 900px) {
+/*    .background {
+        background: url("#") center;
+        background-color: #4202da;
+    }*/
+/*    .content {
+    	height: 100vh;
+    }*/
+
+    h1 {
+    font-size: 11px;
+	transform: rotate(90deg);
+	transform-origin: 100%;
+    padding-top: 30px;
+    text-align: right;
+    width: 100vw;
+}
+/*    h1 {
+    	font-size: 1rem;
+        margin-left: .1rem;
+        margin-right: .1rem;
+    }*/
+}
+
+/*    .logo {
+        transform-origin: center center;
+        animation: doRotate 5s infinite linear;
+    }
+
+    @keyframes doRotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    body {
+        text-align: center;
+    }
+    }*/
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <img class="logo" src="img/logo.svg" alt="logo">
+<!--         <a href="mailto:katelyn.mirabelli@gmail.com" class="cta" target="_blank"><div class="button">get in touch</div></a> -->
+        <h1>Katelyn Mirabelli is a graphic designer based in New York City&nbsp;&nbsp;
+            	<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+            	<a href="#" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+            	<a href="mailto:katelyn.mirabelli@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        </h1>
+        </div>
+        <div class="background"></div>
+    </div>
+
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script>
+    // START HERE: Explanation of Syntax:
+    // TweenMax.to(target, duration, {vars});
+
+    // Examples Below:
+    // TweenMax.to('.logo', 1, {opacity:0});
+    // TweenMax.from('.logo', 1, {opacity:0});
+    // TweenMax.from('.logo', 1, {scale:.5});
+
+
+    // Animating Multiple Elements:
+    // TweenMax.from('.logo', 1, {scale:0});
+    // TweenMax.from('.background', 1, {opacity:0, scale:0, delay:1});
+    // TweenMax.from('h1', 1, {opacity:0, scale:2, delay:2});
+
+
+    // Using delays to manage longer animations is hard
+    // Instead, use a GSAP timeline to create a sequential chain of animations
+    var timeline = new TimelineMax();
+    timeline.from('.logo', 1, {scale:1.1})
+    // timeline.from('h1', .5, {opacity:0, scale:2})
+    // timeline.from('.background', .5, {scale:0})
+
+    // Easing
+    // Refer to https://greensock.com/ease-visualizer
+    var timeline = new TimelineMax();
+    // timeline.from('.logo', 1, {scale:0, ease:Bounce.easeOut})
+    // timeline.from('.background', .3, {scale:0})
+    // timeline.from('h1', .7, {opacity:0, scale:2, ease:Back.easeOut.config(4)})
+    // timeline.from('.cta', .9, {opacity:0, scale:2, ease:Back.easeOut.config(2)})
+    </script>
+</body>
+
+</html>

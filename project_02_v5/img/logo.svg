@@ -1,0 +1,22 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900.37" preserveAspectRatio="none">
+
+<!-- file name -->    
+<title>logo</title>
+
+<!-- M layer white space --> 
+    <g id="M">
+        <polygon points="1600 0 1200 450.14 800 0 1600 0" fill="white"/>
+
+<!-- M layer fill space --> 
+        <polyline id="M-2" data-name="M" points="800 900.37 800 0 1200 450.14 1600 0 1600 900.37" fill="white" opacity="0"/>
+    </g>
+
+<!-- K layer white space --> 
+
+    <g id="K">
+    	<polygon points="799.85 900.37 73.31 451.44 799.85 1.37 799.85 900.37" fill="white"/>
+
+<!-- K layer fill space --> 
+    <polygon id="K-2" data-name="K" points="800.57 0 0 0 0 902.86 800.57 904.07 70.53 451.1 800.57 0" fill="white" opacity="0"/>
+    </g>
+</svg>

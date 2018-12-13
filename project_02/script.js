@@ -40,7 +40,7 @@ $(document).ready(function(){
 		$("#bg").css("background-image", url)
 
 		var tickerText = ticker + 1 + "/" + count;
-		// console.log(tickerText);
+		console.log(tickerText);
 		$("#bg").text(tickerText);
 
 		ticker+=1; 
